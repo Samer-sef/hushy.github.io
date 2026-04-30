@@ -5,14 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Privacy Policy — Hushy</title>
   <meta name="description" content="Privacy Policy for Hushy." />
-  <meta name="theme-color" content="#F3F7F4" />
-  <link rel="icon" href="assets/hushy-icon.svg" type="image/svg+xml" />
+  <meta name="theme-color" content="#3C2260" />
+  <link rel="icon" href="assets/hushy-icon-small.png" type="image/png" />
+  <link rel="apple-touch-icon" href="assets/hushy-icon-large.png" />
   <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
   <main class="legal">
-    <a class="back-link" href="index.html">← Hushy</a>
-    <h1>Privacy Policy</h1>
+    <div class="legal-header">
+      <img class="legal-icon" src="assets/hushy-icon-small.png" alt="" />
+      <div>
+        <p class="legal-kicker">Hushy</p>
+        <h1>Privacy Policy</h1>
+      </div>
+    </div>
     <p><strong>Hushy — Sleep Sounds &amp; White Noise</strong></p>
     <p><strong>Effective date:</strong> April 25, 2026</p>
 
@@ -76,10 +82,9 @@
 
     <h2>4. Location</h2>
     <p>
-      If you grant location permission, Hushy uses your GPS coordinates to fetch local weather from Open-Meteo 
-      (open-meteo.com), an open-source weather API. Your coordinates are sent to Open-Meteo's servers solely to 
-      retrieve the current weather condition; we do not store, log, or share your coordinates ourselves. 
-      Open-Meteo's privacy policy applies to that request. Only the resulting weather condition and temperature are stored within the app.
+      If you grant location permission, Hushy fetches local weather to suggest sounds. The GPS lookup
+      is done on-device via the OS; only the resulting weather condition (not your coordinates) is used
+      within the app. We do not store or transmit your location.
     </p>
 
     <h2>5. Notifications</h2>
