@@ -82,7 +82,6 @@ a {
 .brand img {
   width: 34px;
   height: 34px;
-  filter: drop-shadow(0 0 16px rgba(173, 159, 255, 0.2));
 }
 
 .nav-links {
@@ -114,7 +113,6 @@ a {
   width: clamp(84px, 12vw, 120px);
   height: clamp(84px, 12vw, 120px);
   border-radius: 26px;
-  box-shadow: 0 0 36px rgba(137, 118, 255, 0.15);
   margin-bottom: 20px;
 }
 
@@ -152,48 +150,55 @@ h1 {
 }
 
 .store-button {
-  width: 172px;
+  width: 186px;
   min-height: 58px;
-  padding: 10px 18px;
-  border-radius: 999px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding: 10px 16px;
+  border-radius: 18px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: flex-start;
   text-align: left;
-  transition: transform 160ms ease, background 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
-  box-shadow: var(--shadow-soft);
+  color: #ffffff;
+  background: #171321;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  transition: transform 160ms ease, background 160ms ease, border-color 160ms ease;
 }
 
 .store-button:hover {
   transform: translateY(-1px);
+  background: #211936;
+  border-color: rgba(255, 255, 255, 0.22);
 }
 
 .store-button small {
-  font-size: 0.72rem;
+  display: block;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.7rem;
+  line-height: 1.1;
 }
 
 .store-button strong {
-  font-size: 1.08rem;
-  line-height: 1.05;
-}
-
-.store-button.primary {
+  display: block;
   color: #ffffff;
-  background: linear-gradient(180deg, #6d5cd3 0%, #432c7b 100%);
-  border-color: rgba(228, 220, 255, 0.16);
+  font-size: 1.06rem;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
 }
 
-.store-button.primary small {
-  color: #e6dfff;
+.store-icon {
+  width: 28px;
+  height: 28px;
+  display: inline-grid;
+  place-items: center;
+  flex: 0 0 28px;
 }
 
-.store-button.secondary {
-  color: var(--muted-strong);
-  background: rgba(255, 255, 255, 0.06);
-}
-
-.store-button.secondary small {
-  color: var(--muted);
+.store-icon svg {
+  width: 24px;
+  height: 24px;
+  display: block;
+  fill: currentColor;
 }
 
 .tiny-note {
